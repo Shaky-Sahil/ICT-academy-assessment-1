@@ -16,7 +16,7 @@ const Home = () => {
         )
     },[''])
   return (
-    <div>
+    <div  className='home'>
       <Typography>welcome to the dash board</Typography>
       <Grid container spacing={2}>
         {value.map((v)=>(
@@ -24,8 +24,8 @@ const Home = () => {
             <Grid  item xs={3}>
              <Card className='cards' variant="filled">
              <CardContent>
-                <Typography>Employee:</Typography>
-               {v.tile} {v.body}
+                <Typography>{v.id}</Typography>
+                {v.title}
              </CardContent> 
              </Card>
              </Grid>
