@@ -14,10 +14,9 @@ const Home = () => {
             console.log(value)
         }
         )
-    },[''])
+    })
   return (
     <div  className='home'>
-      <Typography>welcome to the dash board</Typography>
       <Grid container spacing={2}>
         {value.map((v)=>(
             
