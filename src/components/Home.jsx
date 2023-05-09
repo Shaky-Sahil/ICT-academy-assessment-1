@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, Grid, Typography } from '@mui/material'
+import { Card, CardContent, Grid, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
@@ -19,7 +19,6 @@ const Home = () => {
     <div  className='home'>
       <Grid container spacing={2}>
         {value.map((v)=>(
-            
             <Grid  item xs={3}>
              <Card className='cards' variant="filled">
              <CardContent>
